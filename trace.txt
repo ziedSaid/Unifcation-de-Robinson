@@ -1,0 +1,24 @@
+_______________test_______________N°1
+Expression 1: (p,B,C,?x,?z,f(A,?z,B))
+Expression 2: (p,?y,?z,?y,C,?w)
+------- UNIFICATION -------- 
+ ?y/B ?z/C ?x/B  ?w/f(A,C,B)
+
+_______________test_______________N°2
+Expression 1: (P,?x,f(g(?x)),a)
+Expression 2: (P,b,?y,?z)
+------- UNIFICATION -------- 
+ ?x/b ?y/f(g(b)) ?z/a
+
+_______________test_______________N°3
+Expression 1: (q,f(A,?x),?x)
+Expression 2: (q,f(?z,f(?z,D)),?z)
+------- UNIFICATION -------- 
+Echec
+
+_______________test_______________N°4
+Expression 1: (?x)
+Expression 2: (g(?x))
+------- UNIFICATION -------- 
+Echec
+
